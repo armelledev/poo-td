@@ -30,8 +30,8 @@ class Vehicule{
         parent::__construct($marque, $modele, $annee);
     }
     public function afficherDetails(){
-        echo"voiture : {$this->marque} {$this->modele} {$this->annee}"; 
-        echo"{$this->nombrePortes}";
+        echo "voiture : {$this->marque} {$this->modele} {$this->annee}"; 
+        echo "{$this->nombrePortes}";
     }
   }
 
@@ -51,10 +51,10 @@ class Vehicule{
          }
     }
      $voiture = new Voiture("car","civic" ,2019, 4);
-     $moto = new Moto("a","b" ,"c",3 ,"12ab");
+     $moto = new Moto("a","b" ,3,"12ab");
 
-     $voiture->afficherDetails();
-     $moto->afficherDetails();
+     echo $voiture->afficherDetails();
+     echo $moto->afficherDetails();
 
     
     

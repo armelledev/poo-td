@@ -50,6 +50,12 @@ class Vehicule{
             
          }
     }
+     $voiture = new Voiture("car","civic" ,2019, 4);
+     $moto = new Moto("a","b" ,"c",3 ,"12ab");
 
+     $voiture->afficherDetails();
+     $moto->afficherDetails();
 
+    
+    
 ?>
